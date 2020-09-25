@@ -44,7 +44,7 @@ class Welcome extends CI_Controller {
 	}
 	function beranda(){
 		if ($this->session->status === TRUE){
-			$data["title"] = "Admin - GYTECHIM";
+			$data["title"] = "Adminiskontol - AbdiFiyyanTech";
 			$this->load->view('admin/beranda', $data);
 
 		}else{
@@ -55,7 +55,7 @@ class Welcome extends CI_Controller {
 	function moderator(){
 		if ($this->session->status === TRUE){
 
-			$data["title"] = "Halaman Moderator";
+			$data["title"] = "Halaman M0D3R4T0R";
 			$this->load->view('moderator', $data);
 
 		}else{
@@ -64,7 +64,7 @@ class Welcome extends CI_Controller {
 	}
 	function member(){
 		if ($this->session->status === TRUE){
-			$data["title"] = "Halaman Booking Member";
+			$data["title"] = "Halaman B00K1N9 M3MB3R";
 			$this->load->view('member/member', $data);
 		}else{
 			redirect('index');
