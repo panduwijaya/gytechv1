@@ -44,7 +44,7 @@ class Welcome extends CI_Controller {
 	}
 	function beranda(){
 		if ($this->session->status === TRUE){
-			$data["title"] = "Adminiskontol - AbdiTech";
+			$data["title"] = "Adminiskontol - AbdiTechno";
 			$this->load->view('admin/beranda', $data);
 
 		}else{
